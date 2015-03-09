@@ -1,0 +1,14 @@
+,Interface: lpr,,,,,
+,,,,,,
+,Data format,,,,,
+D,Format,CSV,,,,
+D,Header,1,,,,
+,,,,,,
+,,,,,,
+,Fields,,,,,
+,Name,Example,Empty?,Length,Type,Rule
+F,serial_no,64DH048,,...128,Text,
+F,cost_centre_no,890,,,Integer,0...999
+,,,,,,
+,Checks,Type,Rule,,,
+C,Serial number must be unique,IsUnique,serial_no,,,
